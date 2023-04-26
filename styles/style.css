@@ -97,13 +97,13 @@ img {
   padding-block: 5rem 1rem;
 }
 
-.section__title {
+.section_title {
   font-size: var(--h1-font-size);
   font-family: var(--title-font);
   margin-bottom: 1.5rem;
 }
 
-.section__subtitle {
+.section_subtitle {
   display: block;
   font-size: var(--h2-font-size);
   font-family: var(--subtitle-font);
@@ -111,11 +111,10 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.section__title, 
-.section__subtitle {
+.section_title, 
+.section_subtitle {
   text-align: center;
 }
-
 .main {
   overflow: hidden; /* For animation ScrollReveal */
 }
@@ -233,7 +232,9 @@ color: var(--title-color);
 
 
 /* Change background header */
-
+.bg-header{
+  box-shadow: 0 2px 8px hsla(19, 64%, 24%, .1);
+}
 
 /* Active link */
 
@@ -246,13 +247,107 @@ color: var(--title-color);
 
 .home_container{
   row-gap: 3rem;
+  padding-top: 2rem;
 }
 
+.home_img{
+  width:300px;
+  justify-self: center;
+}
+
+.home_data{
+  text-align: center;
+}
+
+.home_title{
+  font-size: var(--biggest-font-size);
+  font-family: var(--title-font);
+  margin-bottom: 1rem;
+}
+
+.home_title img{
+  width: 40px;
+}
+
+.home_title div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .5rem;
+}
+
+.home_description{
+  padding: 0 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.home_leaf-2,
+.home_leaf-1{
+  position:absolute;
+  opacity: .2;
+}
+
+.home_leaf-1{
+  width: 80px;
+  top: 8rem;
+  left:-1rem;
+  transform: rotate(90deg);
+}
+
+.home_leaf-2{
+  width: 100px;
+  bottom: 8rem;
+  right:-2rem;
+  transform: rotate(-15deg);
+}
 
 /*=============== BUTTON ===============*/
 
+.button{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  background: var(--first-color);
+  padding: 1rem 1.5rem;
+  border-radius: 4rem;
+  color: #fff;
+  font-weight: var(--font-medium);
+}
 
 /*=============== ABOUT ===============*/
+.about{
+  position: relative;
+}
+.about_container{
+  row-gap: 3rem;
+}
+.about_data{
+text-align: center
+}
+.about_title img{
+  width: 30px;
+}
+
+.about_title div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.about_img{
+  width: 300px;
+  justify-self: center;
+}
+
+.about_leaf{
+  width: 100px;
+  opacity: .2;
+  position: absolute;
+  right:-1.5rem;
+  bottom: 11rem;
+  transform: rotate(-15deg);
+}
 
 
 /*=============== POPULAR ===============*/
