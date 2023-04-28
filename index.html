@@ -29,7 +29,7 @@
               <a href="#about" class="nav_link">About Us</a>
             </li>
             <li class="nav_item">
-              <a href="#poupular" class="nav_link">Popular</a>
+              <a href="#popular" class="nav_link">Popular</a>
             </li>
             <li class="nav_item">
               <a href="#recently" class="nav_link">Recently</a>
@@ -43,13 +43,12 @@
 
           <img src="image/leaf-branch-3.png" alt="nav image" class="nav_img2" />
         </div>
-
-        <div class="nav_buttons">
-          <!-- <i class="ri-moon-line change-theme" id="change_theme"></i> -->
-        </div>
-
-        <div class="nav_togle" id="nav-togle">
-          <i class="ri-apps-line"></i>
+          <div class="nav_buttons">
+            <i class="ri-moon-line change_theme" id="theme-button"></i>
+            <div class="nav_togle" id="nav-togle">
+              <i class="ri-apps-line"></i>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -112,31 +111,239 @@
               history that passes from generation to generation
             </p>
           </div>
-          <img src="image/about-sushi.png" alt="" class="about_img">
+          <img src="image/about-sushi.png" alt="" class="about_img" />
         </div>
-        <img src="image/leaf-branch-1.png" alt="" class="about_leaf">
+        <img src="image/leaf-branch-1.png" alt="" class="about_leaf" />
       </section>
 
       <!--==================== POPULAR ====================-->
       <section class="popular section" id="popular">
-        
+        <span class="section_subtitle"> The Best Food </span>
+        <h2 class="section_title">Popular Dishes</h2>
+        <div class="popular_container container grid">
+          <article class="popular_card">
+            <img
+              src="image/popular-onigiri.png"
+              alt="popular image"
+              class="popular_img"
+            />
+            <h3 class="popular_name">Onigiri</h3>
+            <span class="popular_description">Japanese Dish</span>
+            <span class="popular_price">$10.99</span>
+            <button class="popular_button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+          <article class="popular_card">
+            <img
+              src="image/popular-spring-rols.png"
+              alt="popular image"
+              class="popular_img"
+            />
+            <h3 class="popular_name">Spring Rolls</h3>
+            <span class="popular_description">Japanese Dish</span>
+            <span class="popular_price">$15.99</span>
+            <button class="popular_button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+          <article class="popular_card">
+            <img
+              src="image/popular-sushi-rolls.png"
+              alt="popular image"
+              class="popular_img"
+            />
+            <h3 class="popular_name">Sushi Rolls</h3>
+            <span class="popular_description">Japanese Dish</span>
+            <span class="popular_price">$19.99</span>
+            <button class="popular_button">
+              <i class="ri-shopping-bag-line"></i>
+            </button>
+          </article>
+        </div>
       </section>
 
       <!--==================== RECENTLY ====================-->
-      <section class="recently section" id="recently"></section>
+      <section class="recently section" id="recently">
+        <div class="recently_container container grid">
+          <div class="recently_data">
+            <span class="section_subtitle"> Recently Added </span>
+            <h2 class="section_title">
+              Sushi Samurai <br />
+              Salmón Cheese
+            </h2>
+
+            <p class="recently_description">
+              Take a look at what's new. And do not deprive yourself of good
+              meal, enjoy and be happy
+            </p>
+            <a href="#" class="button">Order Now</a>
+            <img
+              src="image/spinach-leaf.png"
+              alt="recently image"
+              class="recently_data_img"
+            />
+          </div>
+          <img
+            src="image/recently-salmon-sushi.png"
+            alt="recently image"
+            class="recently_image"
+          />
+        </div>
+        <img
+          src="image/leaf-branch-2.png"
+          alt="recently data"
+          class="recently_leaf_1"
+        />
+        <img
+          src="image/leaf-branch-3.png"
+          alt="recently data"
+          class="recently_leaf_2"
+        />
+      </section>
 
       <!--==================== NEWSLETTER ====================-->
-      <section class="newsletter section"></section>
+      <section class="newsletter section">
+        <div class="newletter_container container">
+          <div class="newsletter_content grid">
+            <img
+              src="image/newsletter-sushi.png"
+              alt="newsletter image"
+              class="newsletter_img"
+            />
+            <div class="newsletter_data">
+              <span class="section_subtitle"> Newsletter </span>
+              <h2 class="section_title">
+                Subscribe For <br />
+                Updates
+              </h2>
+
+              <form action="" class="newsletter_form">
+                <input
+                  type="email"
+                  class="newsletter_input"
+                  placeholder="Enter email"
+                />
+                <button class="button newsletter_button">
+                  Subscribe
+                  <i class="ri-send-plane-line"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer_container container grid">
+        <div>
+          <a href="" class="footer_logo">
+            <img
+              src="image/logo.png"
+              alt="footer image"
+              class="footer_logo_img"
+            />
+            Sushi
+          </a>
+          <p class="footer_description">
+            Food for the body is not enough. There must be food for the soul.
+          </p>
+        </div>
+        <div class="footer_content">
+          <div>
+            <h3 class="footer_title">Main Menu</h3>
+            <ul class="footer_links">
+              <li>
+                <a href="#home" class="footer_link">About</a>
+              </li>
+              <li>
+                <a href="#home" class="footer_link">Menus</a>
+              </li>
+              <li>
+                <a href="#home" class="footer_link">Offer</a>
+              </li>
+              <li>
+                <a href="#home" class="footer_link">Events</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer_title">Information</h3>
+            <ul class="footer_links">
+              <li>
+                <a href="#home" class="footer_link">Contact</a>
+              </li>
+              <li>
+                <a href="#home" class="footer_link">Order & Returns</a>
+              </li>
+              <li>
+                <a href="#home" class="footer_link">Videos</a>
+              </li>
+              <li>
+                <a href="#home" class="footer_link">Reservation</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer_title">Adress</h3>
+            <ul class="footer_links">
+              <li class="footer_information">
+                Av. Hacienda 1234 <br />
+                Lima 4321, Perú
+              </li>
+              <li class="footer_information">9AM - 11PM</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer_title">Social Media</h3>
+            <ul class="footer_social">
+              <a href="#" class="footer_social_link" target="_blank">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+              <a href="#" class="footer_social_link" target="_blank">
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a href="#" class="footer_social_link" target="_blank">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <img
+          src="image/spring-onion.png"
+          alt="footer image"
+          class="footer_onion"
+        />
+        <img
+          src="image/spinach-leaf.png"
+          alt="footer image"
+          class="footer_spinach"
+        />
+        <img
+          src="image/leaf-branch-4.png"
+          alt="footer image"
+          class="footer_leaf"
+        />
+      </div>
+      <div class="footer_info container">
+        <div class="footer_card">
+          <img src="image/footer-card-1.png" alt="footer image" />
+          <img src="image/footer-card-2.png" alt="footer image" />
+          <img src="image/footer-card-3.png" alt="footer image" />
+          <img src="image/footer-card-4.png" alt="footer image" />
+        </div>
 
-    <!--========== SCROLL UP ==========-->
+        <span class="footer_copy">
+          &#169; Copyright Bedimcode. All rights reserved
+        </span>
+      </div>
+    </footer>
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
-
+    <script src="scripts/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--=============== MAIN JS ===============-->
     <script src="scripts/main.js"></script>
   </body>
